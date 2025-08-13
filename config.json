@@ -1,0 +1,26 @@
+{
+  "site": {
+    "name": "Susana Mogensen",
+    "tagline": "Elegant, whimsical stories for every age.",
+    "domain": "https://your-domain.example",
+    "email": "hello@example.com"
+  },
+  "social": {
+    "instagram": "https://instagram.com/yourhandle",
+    "tiktok": "https://tiktok.com/@yourhandle",
+    "goodreads": "https://www.goodreads.com/"
+  },
+  "newsletter": {
+    "provider": "mailchimp",
+    "action_url": "https://example.us1.list-manage.com/subscribe/post"
+  },
+  "contact": {
+    "provider": "formspree",
+    "action_url": "https://formspree.io/f/yourEndpoint"
+  },
+  "analytics": {
+    "provider": "google",
+    "google_measurement_id": "G-XXXXXXXXXX",
+    "goatcounter_domain": "yourid.goatcounter.com"
+  }
+}

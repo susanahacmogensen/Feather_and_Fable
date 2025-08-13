@@ -1,0 +1,67 @@
+
+:root{
+  --bg: #FFFDF8;
+  --text:#211A20;
+  --muted:#6B6470;
+  --brand:#6F5ACD;
+  --brand-2:#E2C677;
+  --card:#FFFFFF;
+  --alt:#F7F2FF;
+  --focus:#FFB3D6;
+  --link:#6F5ACD;
+  --maxw: 1160px;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(30,10,60,.08);
+  --font-size: 18px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0F0D14; --text:#F4F1FA; --muted:#B6B1C3; --card:#171321; --alt:#151126; --link:#B8A6FF; --shadow: 0 10px 30px rgba(0,0,0,.5);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial;font-size:var(--font-size)}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.08;margin:.2rem 0 .6rem}
+h1{font-size:clamp(2rem,4vw,3rem)} h2{font-size:clamp(1.6rem,2.8vw,2.2rem)}
+p,li{line-height:1.75}
+a{color:var(--link);text-decoration-color:rgba(111,90,205,.35);text-underline-offset:.18em}
+a:hover{text-decoration-color:currentColor}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;position:sticky;top:0;background:color-mix(in srgb,var(--bg),transparent 0%);border-bottom:1px solid color-mix(in srgb,var(--text),transparent 92%);backdrop-filter:saturate(140%) blur(6px)}
+.brand{display:flex;gap:.65rem;align-items:center;font-weight:700;color:inherit}
+.brand .mark{inline-size:28px;block-size:28px;border-radius:8px;display:inline-grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:white;font-weight:800}
+.nav-links{display:flex;gap:1rem;align-items:center}
+.nav-toggle{display:none;background:transparent;border:1px solid color-mix(in srgb,var(--text),transparent 80%);border-radius:.6rem;padding:.4rem .7rem}
+@media (max-width:760px){.nav-toggle{display:inline-block}.nav-links{display:none;flex-direction:column;align-items:flex-start;padding:.6rem 0}.nav-links.open{display:flex}}
+.hero{padding:6.5rem 1.25rem;background:
+  radial-gradient(1200px 600px at 20% -10%, var(--alt), transparent),
+  radial-gradient(800px 400px at 120% 20%, #FFE7F4, transparent),
+  linear-gradient(135deg, #FFF7E5, #F1EEFF 60%, #FFFFFF)}
+.hero-inner{max-width:var(--maxw);margin:0 auto;text-align:center}
+.tagline{font-size:1.1rem;color:var(--muted);margin-top:.4rem}
+.cta{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--brand);color:#fff;padding:.75rem 1rem;border-radius:.7rem;border:none;box-shadow:var(--shadow)}
+.btn.ghost{background:transparent;color:var(--brand);border:2px solid var(--brand)}
+.btn.small{padding:.5rem .75rem;font-size:.9rem}
+.btn.gold{background:var(--brand-2);color:#2a2100}
+.section{max-width:var(--maxw);margin:0 auto;padding:3rem 1.25rem}
+.section.alt{background:var(--alt);border-radius:16px;margin:2rem 1.25rem}
+.grid-two{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+@media (max-width:900px){.grid-two{grid-template-columns:1fr}}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+@media (max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid color-mix(in srgb,var(--text),transparent 90%);border-radius:var(--radius);overflow:hidden;display:block;transition:transform .15s ease, box-shadow .15s ease}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card img{width:100%;aspect-ratio:3/4;object-fit:cover;background:#ddd}
+.card .card-body{padding:1rem}
+.card.book h3{margin:.2rem 0 .4rem}
+.form{display:grid;gap:.6rem;max-width:560px}
+.form input,.form textarea{padding:.8rem .9rem;border:1.5px solid color-mix(in srgb,var(--text),transparent 80%);border-radius:.6rem;background:transparent;color:var(--text)}
+.form button{justify-self:start}
+.footer{padding:2rem 1.25rem;border-top:1px solid color-mix(in srgb,var(--text),transparent 90%);margin-top:3rem}
+.footer .grid{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.portrait{width:100%;max-width:420px;border-radius:12px;border:1px solid color-mix(in srgb,var(--text),transparent 88%)}
+.bullets{line-height:1.9}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
