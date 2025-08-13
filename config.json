@@ -1,26 +1,12 @@
 {
-  "site": {
-    "name": "Susana Mogensen",
-    "tagline": "Elegant, whimsical stories for every age.",
-    "domain": "https://your-domain.example",
-    "email": "hello@example.com"
-  },
+  "site.domain": "https://susanamogensen.github.io/Feather_and_Fable",
+  "site.email": "your@email.com",
   "social": {
-    "instagram": "https://instagram.com/yourhandle",
-    "tiktok": "https://tiktok.com/@yourhandle",
-    "goodreads": "https://www.goodreads.com/"
+    "Tiktok": "https://www.tiktok.com/@susana.mogensen?_t=ZN-8yqh2pcy9WI&_r=1",
   },
-  "newsletter": {
-    "provider": "mailchimp",
-    "action_url": "https://example.us1.list-manage.com/subscribe/post"
-  },
-  "contact": {
-    "provider": "formspree",
-    "action_url": "https://formspree.io/f/yourEndpoint"
-  },
+  "contact.provider": "susanahacmogensen@yahoo.com",
   "analytics": {
     "provider": "google",
-    "google_measurement_id": "G-XXXXXXXXXX",
-    "goatcounter_domain": "yourid.goatcounter.com"
+    "google_measurement_id": "G-XXXXXXX"
   }
 }
